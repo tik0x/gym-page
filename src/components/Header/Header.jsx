@@ -14,7 +14,7 @@ const Header = () => {
 
         <img src={Logo} alt="logo" className="logo" />
 
-        {(mobile === true) ? (
+        {(menuOpened === false && mobile === true) ? (
           <div style={{
             backgroundColor: "var(--appColor)", 
             padding: ".5rem", 
