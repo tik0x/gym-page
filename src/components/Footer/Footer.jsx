@@ -3,6 +3,7 @@ import Github from "../../assets/github.png"
 import Instagram from "../../assets/instagram.png"
 import Linkedin from "../../assets/linkedin.png"
 import Logo from "../../assets/logo.png"
+import { Link } from "react-scroll"
 
 const Footer = () => {
 
@@ -20,7 +21,12 @@ const Footer = () => {
             </div>
 
             <div className="logo-f">
-              <a href="#"><img src={Logo} alt="fitclub logo" /></a>
+              <Link
+              to="home"
+              span={true}
+              smooth={true}>
+                <img src={Logo} alt="fitclub logo" style={{cursor: "pointer"}}/>
+              </Link>
             </div>
         </div>
 
