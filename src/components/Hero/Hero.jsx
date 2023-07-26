@@ -29,7 +29,7 @@ const Hero = () => {
             >
 
             </motion.div>
-            <span>the best fitness club in the town</span>
+            <span>THE BEST FITNESS CLUB IN THE TOWN</span>
           </div>
 
           <div className="hero-text">

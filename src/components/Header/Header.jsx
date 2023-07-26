@@ -14,7 +14,7 @@ const Header = () => {
 
         <img src={Logo} alt="logo" className="logo" />
 
-        {(menuOpened === false && mobile === true) ? (
+        {(menuOpened === false  && mobile === true) ? (
           <div style={{
             backgroundColor: "var(--appColor)", 
             padding: ".5rem", 
@@ -31,11 +31,16 @@ const Header = () => {
           ) : (
           <ul className="header-menu">
             <il>
+              <div className="x" onClick={() => setMenuOpened(false)}>
+                X
+              </div>
+            </il>
+            <il>
               <Link onClick={() => setMenuOpened(false)}
               to="home"
               span={true}
               smooth={true}>
-                Home</Link>
+              Home</Link>
             </il>
             <il>
               <Link onClick={() => setMenuOpened(false)}
